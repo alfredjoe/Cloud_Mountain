@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Cloud Mountain</title>
+  </head>
+  <body>
+    <section class="wrapper">
+    <header>
+      <div class="head">
+
+      <div class="left">
+        <div onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></div>
+      <a class="logo" href="">
+        <img src="images/logo.png" alt="logo">
+      </a>
+    </div>
+
+      <div class="center">
+      <ul>
+        <li><a href="">Product</a></li>
+        <li><a href="">Resources</a></li>
+        <li><a href="">about</a></li>
+        <li><a href="">pricing</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <a href="" class="button">
+        log in
+      </a><a href="" class="button signup">
+        Sign Up
+      </a>
+    </div>
+  </div>
+  <ul class="sidebar">
+    <li onclick=closeSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+    <li><a href="">Product</a></li>
+    <li><a href="">Resources</a></li>
+    <li><a href="">about</a></li>
+    <li><a href="">pricing</a></li>
+    <li><a href="" class="button">
+      log in
+    </a></li>
+    <li><a href="" class="button signup">
+      Sign Up
+    </a></li>
+  </ul>
+    </header>
+    <div id="spotlight">
+      <div class="heading"><h1>Secure cloud-native infrastructure with Cloudmountian</h1>
+       </div>
+      <div class="bimg">
+        <div class="p">
+      <p>With cloud-native security integrated into your application  design,<br> you  can develop rapidly and innovate<br> continuously.</p>
+      <a href="" class="button signup invert">Sign up</a>
+     </div>
+    </div>
+    </div>
+
+  </section>
+  <script>
+    function showSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.style.display = 'flex';
+}
+function closeSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.style.display = 'none';
+}
+
+  </script>
+  </body>
+</html>

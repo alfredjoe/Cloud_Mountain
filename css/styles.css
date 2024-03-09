@@ -1,0 +1,331 @@
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+body{
+    background: #d2cbff;
+    overflow-x: hidden;
+    min-width: 320px;
+}
+.wrapper{
+margin: 10px;
+}
+header
+{
+    
+    height: 70px;
+    border-bottom-style: solid;
+    border-color: rgba(0, 0, 0, 0.781);
+}
+
+.head{
+    position: relative;
+    padding: 10px;
+    padding-left: 0px;
+    display: flex;
+}
+.left{
+width: 600px;
+margin-top: -3px;
+}
+ul{
+    position: relative;
+    padding: 0px;
+    padding-left: 450px;
+    display: flex; 
+}
+li:first-child{
+padding-left: 0px;
+}
+li:last-child{}
+li{
+    font-size: 19px;
+    padding-left: 55px;
+    list-style-type: none;
+}
+img{
+    padding-top: -5px;
+   width: 200px;
+}
+div.right{
+    padding-top: 16px;
+    position: relative;
+width: 580px;
+    right: 10px;
+    padding-left: 350px;
+}
+.button{
+    padding-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:first-child{
+    padding-left: 0px;
+}
+.signup{
+    background: #000;
+    color: white;
+    padding: 10px;
+    padding-right: 30px;
+    padding-left:30px;
+    margin-left: 30px;
+    border-radius: 0px;
+    
+}
+#spotlight{
+
+padding-right:10px ;
+}
+.heading
+{
+    width: 50%;
+}
+h1{
+    font-size: 60px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight:medium;
+}
+.bimg{
+    height: 500px;
+    width: calc(100vw - 40px);
+    background-size: cover;
+    background-image:url(../assets/bg.png);
+}
+.p{
+font-size: 20px;
+color: #d2cbff;
+padding-left: 1150px;
+padding-right: 100px;
+width: 20%;
+padding-top: 70px;
+line-height: 28px;
+word-spacing: 3.5px;
+}
+.sidebar{
+
+    position: fixed;
+  width: 250px;
+  height: 100vh;
+  top: -15px;
+  left: 0px;
+/* background-image: url(../images/icons8-menu.svg);
+background-size: 40px; */
+z-index: 999;
+background-color:#d2cbff;
+box-shadow: -10px 0 10px black;
+display: none;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
+padding-left: 80px;
+
+}
+
+.sidebar li:first-child {
+padding-bottom: 0px;
+padding-top: 41px;
+}
+.left div{
+    display: none;
+}
+.sidebar li {
+    padding-top: 80px;
+    padding-left: 0px;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.sidebar li a.button{
+    color: #000;
+    font-size: 25px;
+    
+}
+.sidebar li a.signup{
+    color: white;
+    font-size: 25px;
+    margin-left: 0px;
+    padding-left: 30px;
+}
+a:hover{
+    background-color:#f0f0f0;
+}
+.invert
+{
+    position: relative;
+    top: 25px;
+    left: -10px;
+
+    background: #d2cbff;
+    color: #000;
+    padding: 10px;
+    font-size: 30px;
+    padding-right: 50px;
+    padding-left:50px;
+    margin-left: 10px;
+    border-radius: 0px;
+}
+@media all and (max-width:1685px){
+    div.right{
+        padding-top: 16px;
+        position: relative;
+        left: 100px;
+        width: 589px;
+        padding-left: 100px;
+    }
+}
+@media all and (max-width:1280px)
+{
+    .p{padding-left: 700px;
+    width: 30%;
+    }
+    .bimg{
+        height: 400px;
+    }
+    div.right{
+        padding-top: 16px;
+        position: relative;
+        left: 100px;
+        width: 589px;
+        padding-left: 0px;
+    }
+    div.center{
+        width: 300px;
+    }
+    ul{
+        left:-450px
+    }
+}
+@media all and (max-width:980px){
+    .p{padding-left: 500px;
+        width: 35%;
+        padding-top: 10px;    
+    }
+        .bimg{
+            height: 300px;
+        }
+        .heading
+{
+    width: 80%;
+}
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;}
+.nav{
+    display: block;
+}
+div.right{
+    width: 579px;
+    padding-top: 16px;
+    position: relative;
+    left: 100px;
+}
+ul{
+    display: none;
+}
+.left{
+    width: 600px;
+    margin-top: -3px;
+    padding-left: 50px;
+    }
+    .left div{
+        display: block;
+        position: absolute;
+        left: -35px;
+        top: 20px;
+    }
+    .left{
+        padding-left: 0px;
+    }
+    .left a{
+        padding-left: 50px;
+    }
+}
+@media all and (max-width:768px){
+    div.right{
+        width: 579px;
+        padding-top: 16px;
+        position: relative;
+        left: 0px;
+        padding-left: 0px;
+    }
+    .p{padding-left: 300px;
+        width: 45%;
+        padding-top: 10px;    
+    }
+    .heading{
+width: 100%;
+    }
+}
+@media all and (max-width:640px){
+    div.right{
+        width: 579px;
+        padding-top: 16px;
+        position: relative;
+        left: 0px;
+        padding-left:0px;
+    }
+    div.left{
+width: 150px;
+    }
+    .p{
+        padding-left: 0px;
+        width: 100%;
+        padding-top: 10px;  
+        
+        color: #000;  
+    }
+    .bimg{
+        background-image: none;
+    }
+    .invert{
+        color: #d2cbff;
+        background: #000;
+    }
+    div.right{
+        display: none;
+    }
+}
+@media all and (max-width:480px){
+    div.right{
+        display: none;
+    }
+    .left{
+        padding-left:120px;
+    }
+    h1{
+        font-size: 50px;
+    }
+
+}
